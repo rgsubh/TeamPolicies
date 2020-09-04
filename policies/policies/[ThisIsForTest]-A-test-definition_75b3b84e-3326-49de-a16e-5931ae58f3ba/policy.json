@@ -34,4 +34,6 @@
  "id": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyDefinitions/75b3b84e-3326-49de-a16e-5931ae58f3ba",
  "type": "Microsoft.Authorization/policyDefinitions",
  "name": "75b3b84e-3326-49de-a16e-5931ae58f3ba"
+ 
+ 
 }
