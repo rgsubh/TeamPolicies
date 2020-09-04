@@ -1,0 +1,37 @@
+{
+ "properties": {
+  "displayName": "[This is for test] A test definition",
+  "policyType": "Custom",
+  "mode": "All",
+  "metadata": {
+   "createdBy": "a1382ee0-8aa7-4155-8092-17e3603acf07",
+   "createdOn": "2020-09-04T03:26:53.1279778Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {
+   "allowedLocations": {
+    "type": "Array",
+    "metadata": {
+     "displayName": "Allowed locations",
+     "description": "The list of allowed locations for resources.",
+     "strongType": "location"
+    }
+   }
+  },
+  "policyRule": {
+   "if": {
+    "not": {
+     "field": "location",
+     "in": "[parameters('allowedLocations')]"
+    }
+   },
+   "then": {
+    "effect": "audit"
+   }
+  }
+ },
+ "id": "/subscriptions/c00d16c7-6c1f-4c03-9be1-6934a4c49682/providers/Microsoft.Authorization/policyDefinitions/75b3b84e-3326-49de-a16e-5931ae58f3ba",
+ "type": "Microsoft.Authorization/policyDefinitions",
+ "name": "75b3b84e-3326-49de-a16e-5931ae58f3ba"
+}
