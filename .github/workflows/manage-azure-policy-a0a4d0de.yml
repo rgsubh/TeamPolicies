@@ -19,6 +19,7 @@ jobs:
       with:
         paths: |
           policies/policies/[[][T]hisIsForTest[]]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
+        mode: complete
           
           
           
