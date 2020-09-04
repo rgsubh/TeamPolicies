@@ -18,4 +18,4 @@ jobs:
       uses: azure/manage-azure-policy@v0
       with:
         paths: |
-          policies/policies/[This-is-for-test]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
+          policies/policies/\[This-is-for-test\]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
