@@ -2,7 +2,7 @@ name: manage-azure-policy-a0a4d0de
 on:
   push:
     paths:
-      - policies/policies/[ThisIsForTest]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
+      - policies/policies/[Thii-ssFor-test]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
       - .github/workflows/manage-azure-policy-a0a4d0de.yml
 jobs:
   apply-azure-policy:
