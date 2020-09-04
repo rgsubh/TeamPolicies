@@ -18,7 +18,7 @@ jobs:
       uses: azure/manage-azure-policy@v0
       with:
         paths: |
-          policies/policies/[[][A-Z]hisIsForTest[]]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
+          policies/policies/\\[[A-Z]hisIsForTest\\]-A-test-definition_75b3b84e-3326-49de-a16e-5931ae58f3ba/**
         mode: complete
           
           
