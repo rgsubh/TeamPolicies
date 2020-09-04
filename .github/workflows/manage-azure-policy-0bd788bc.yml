@@ -1,0 +1,21 @@
+name: manage-azure-policy-0bd788bc
+on:
+  push:
+    paths:
+      - newone/policies/[PREVIEW]-This-is-new_30a23f7a-a2e1-4312-9358-715a42ec83c2/**
+      - .github/workflows/manage-azure-policy-0bd788bc.yml
+jobs:
+  apply-azure-policy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Login to Azure
+      uses: azure/login@v1
+      with:
+        creds: ${{secrets.AZURE_CREDENTIALS_0bd788bc}}
+    - name: Create or Update Azure Policies
+      uses: azure/manage-azure-policy@v0
+      with:
+        paths: |
+          newone/policies/[PREVIEW]-This-is-new_30a23f7a-a2e1-4312-9358-715a42ec83c2/**
